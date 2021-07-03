@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:elevation="6dp"
+        app:cardBackgroundColor="@color/lightpurple">
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:text="Tanggal"
+                android:textColor="@color/darkblue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_bold"/>
+
+            <TextView
+                android:id="@+id/tv_conf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_date"
+                android:text="Terkonfirmasi : "
+                android:textColor="@color/darkblue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_bold"/>
+
+            <TextView
+                android:id="@+id/tv_allconf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Total Conf"
+                android:textColor="@color/darkblue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_semi_bold"/>
+
+            <TextView
+                android:id="@+id/tv_sembuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_date"
+                android:layout_below="@id/tv_conf"
+                android:layout_marginTop="8dp"
+                android:text="Sembuh : "
+                android:textColor="@color/darkblue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_bold"/>
+
+            <TextView
+                android:id="@+id/tv_allsembuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_allconf"
+                android:layout_marginTop="8dp"
+                android:text="Total Sembuh"
+                android:textColor="@color/darkblue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_semi_bold"/>
+
+            <TextView
+                android:id="@+id/tv_dead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_date"
+                android:layout_below="@id/tv_sembuh"
+                android:layout_marginTop="8dp"
+                android:text="Meninggal : "
+                android:textColor="@color/darkblue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_bold"/>
+
+            <TextView
+                android:id="@+id/tv_alldead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_allsembuh"
+                android:layout_marginTop="8dp"
+                android:text="Total Dead"
+                android:textColor="@color/darkblue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_semi_bold"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
